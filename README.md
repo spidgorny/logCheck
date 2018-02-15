@@ -1,10 +1,16 @@
 ## Usage
 
-```xzcat -f /var/log/apache2/dci.nintendo.de-error_log* | php www/slawa/logCheck/lc.php```
+Pipe compressed log files including the uncompressed one (-f switch). The chronology is broken.
 
-```{ zcat /var/log/apache2/dci.nintendo.de-error_log* ; cat /var/log/apache2/dci.nintendo.de-error_log ; } | php www/slawa/logCheck/lc.php```
+```xzcat -f /var/log/apache2/error_log* | php www/slawa/logCheck/lc.php```
 
-```{ xzcat /var/log/apache2/dci.nintendo.de-error_log* ; cat /var/log/apache2/dci.nintendo.de-error_log ; } | grep "open files" | php www/slawa/logCheck/lc.php```
+Pipe first the compressed files and then uncompressed. Chronology restored.
+
+```{ zcat /var/log/apache2/error_log* ; cat /var/log/apache2/error_log ; } | php www/slawa/logCheck/lc.php```
+
+Faster to use grep to filter the same text.
+
+```{ xzcat /var/log/apache2/error_log* ; cat /var/log/apache2/error_log ; } | grep "open files" | php www/slawa/logCheck/lc.php```
 
 ## Code in lc.php
 
