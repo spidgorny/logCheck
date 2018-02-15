@@ -1,0 +1,17 @@
+{
+    "name": "depidsvy/log-check",
+    "authors": [
+        {
+            "name": "Slawa",
+            "email": "depidsvy@nintendo.de"
+        }
+    ],
+    "require": {
+        "mvar/apache2-log-parser": "^2.1"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}

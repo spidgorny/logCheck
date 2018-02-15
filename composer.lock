@@ -1,0 +1,100 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a606e40fffd38532ed2f524f9c7bde07",
+    "packages": [
+        {
+            "name": "mvar/apache2-log-parser",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvar/apache2-log-parser.git",
+                "reference": "6c535f2504c4d14a75b332d3ec49ec68f308baa7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvar/apache2-log-parser/zipball/6c535f2504c4d14a75b332d3ec49ec68f308baa7",
+                "reference": "6c535f2504c4d14a75b332d3ec49ec68f308baa7",
+                "shasum": ""
+            },
+            "require": {
+                "mvar/log-parser": "~1.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MVar\\Apache2LogParser\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mantas Varatiejus",
+                    "email": "var.mantas@gmail.com"
+                }
+            ],
+            "description": "Apache2 access and error logs parser",
+            "time": "2015-12-20T16:57:54+00:00"
+        },
+        {
+            "name": "mvar/log-parser",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvar/log-parser.git",
+                "reference": "56e252e786695f526e9cc274b9ec36189f436ed7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvar/log-parser/zipball/56e252e786695f526e9cc274b9ec36189f436ed7",
+                "reference": "56e252e786695f526e9cc274b9ec36189f436ed7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "mvar/apache2-log-parser": "Allows to easily parse Apache web server log files"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MVar\\LogParser\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mantas Varatiejus",
+                    "email": "var.mantas@gmail.com"
+                }
+            ],
+            "description": "Universal log parser",
+            "time": "2017-06-13T18:59:38+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
