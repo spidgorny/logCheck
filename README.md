@@ -1,12 +1,12 @@
-== Usage
+## Usage
 
-xzcat -f /var/log/apache2/dci.nintendo.de-error_log* | php www/slawa/logCheck/lc.php
+```xzcat -f /var/log/apache2/dci.nintendo.de-error_log* | php www/slawa/logCheck/lc.php```
 
-{ zcat /var/log/apache2/dci.nintendo.de-error_log* ; cat /var/log/apache2/dci.nintendo.de-error_log ; } | php www/slawa/logCheck/lc.php
+```{ zcat /var/log/apache2/dci.nintendo.de-error_log* ; cat /var/log/apache2/dci.nintendo.de-error_log ; } | php www/slawa/logCheck/lc.php```
 
-{ xzcat /var/log/apache2/dci.nintendo.de-error_log* ; cat /var/log/apache2/dci.nintendo.de-error_log ; } | grep "open files" | php www/slawa/logCheck/lc.php
+```{ xzcat /var/log/apache2/dci.nintendo.de-error_log* ; cat /var/log/apache2/dci.nintendo.de-error_log ; } | grep "open files" | php www/slawa/logCheck/lc.php```
 
-== Code in lc.php
+## Code in lc.php
 
 ```
 (new LogCheck('php://stdin'))
@@ -15,7 +15,7 @@ xzcat -f /var/log/apache2/dci.nintendo.de-error_log* | php www/slawa/logCheck/lc
 	->render();
 ```
 
-== Result
+## Result
 
 ```
 LogSet 2016-10-13: [2]
